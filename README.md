@@ -1,34 +1,35 @@
 # A-program-that-will-show-the-bonus-of-an-employee-Python
+A program that will show the bonus of an employee by asking the employees years in service and office. 
+The user will input number for years in service and the following office (IT, acct, hr)
+
+    name = input("Enter your name: ")
+
+    yrs = int(input("Enter yrs in service: "))
+
+    office = str(input("Enter office: "))
 
 
- name = input("Enter your name: ")
+    it1 = 10000
 
-yrs = int(input("Enter yrs in service: "))
+    it2 = 5000
 
-office = str(input("Enter office: "))
+    acct = 12000
 
+    acct2 = 6000
 
-it1 = 10000
+    hr = 15000
 
-it2 = 5000
+    hr2 = 7500
+ 
 
-acct = 12000
+    off1 = "IT"
 
-acct2 = 6000
+    off2 = "ACCOUNTANT"
 
-hr = 15000
-
-hr2 = 7500
-
-
-off1 = "IT"
-
-off2 = "ACCOUNTANT"
-
-off3 = "HR"
+    off3 = "HR"
 
 
-if office == off1:
+    if office == off1:
 
     if yrs >= 10:
     
@@ -38,7 +39,7 @@ if office == off1:
     
         print("Hi " + name.upper() + ", your bonus is: " + str(it2))
         
-elif office == off2:
+    elif office == off2:
 
     if yrs >= 10:
     
@@ -48,7 +49,7 @@ elif office == off2:
     
         print("Hi " + name.upper() + ", your bonus is: " + str(acct2))
         
-elif office == off3:
+    elif office == off3:
 
     if yrs >= 10:
     
@@ -58,6 +59,6 @@ elif office == off3:
     
         print("Hi " + name.upper() + ", your bonus is: " + str(hr2))
         
-else:
+    else:
 
     print(" \ninvalid occupation or n/a\n pls make sure the letter is correct and uppercase")
